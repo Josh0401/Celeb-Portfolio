@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ryan Reynolds | Welcome</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <nav>
+        <h2 class="logo">Rey<span>nolds</span></h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="biography.html">Biography</a></li>
+            <li><a class="active" href="movies.html">Movies</a></li>
+            <li><a href="awards.html">Awards</a></li>
+        </ul>
+        <a href="#" class="btn">Subscribe</a>
+    </nav>
+    <!----- section start----------->
+	<section class="movies" id="movies">
+        <div class="service">
+            <div class="title">
+                <h2><span>Movies</span> Acted</h2>
+              <div class="container">
+                <img src="img/Deadpool.jpg" alt="Avatar" class="image" style="width:100%">
+                <div class="overlay">
+                  <div class="text">Ajax, a twisted scientist, experiments on Wade Wilson, a mercenary, to cure him of cancer and give him healing powers. However, the experiment leaves Wade disfigured and he decides to exact revenge.<br><br><br>Release date: <br>12 February 2016.</div>
+                </div>
+              </div>
+              <div class="container">
+                <img src="img/Free Guy.jfif" alt="Avatar" class="image" style="width:100%">
+                <div class="overlay">
+                  <div class="text">When a bank teller discovers he's actually a background player in an open-world video game, he decides to become the hero of his own story -- one that he can rewrite himself. In a world where there's no limits, he's determined to save the day his way before it's too late, and maybe find a little romance with the coder who conceived him.<br><br><br>Release date: <br>13 August 2021.</div>
+                </div>
+              </div>
+              <div class="container">
+                <img src="img/Red Notice.jfif" alt="Avatar" class="image" style="width:100%">
+                <div class="overlay">
+                  <div class="text">In the world of international crime, an Interpol agent attempts to hunt down and capture the world's most wanted art thief.<br><br><br>Release date: <br>5 November 2021.</div>
+                </div>
+              </div>
+              <div class="container">
+                <img src="img/Adam Project.jfif" alt="Avatar" class="image" style="width:100%">
+                <div class="overlay">
+                  <div class="text">After accidentally crash-landing in 2022, time-traveling fighter pilot Adam Reed teams up with his 12-year-old self for a mission to save the future.<br><br><br>Release date: <br>11 March 2022.</div>
+                </div>
+              </div>
+              <div class="container">
+                <img src="img/6 Underground.jfif" alt="Avatar" class="image" style="width:100%">
+                <div class="overlay">
+                  <div class="text">Six individuals from all around the globe, each the very best at what they do, have been chosen not only for their skill, but for a unique desire to delete their pasts to change the future.<br><br><br>Release date: <br>13 December 2019.</div>
+                </div>
+              </div>
+              <div class="container">
+                <img src="img/HB.jfif" alt="Avatar" class="image" style="width:100%">
+                <div class="overlay">
+                  <div class="text">Michael Bryce, a protection agent, is tasked with protecting Darius Kincaid, one of the world's most famous assassins. The two must then set aside their differences to tackle several dangerous events.<br><br><br>Release date: <br>18 August 2017.</div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+     <!----- section start----------->
+	<section class="movies" id="movies">
+    <div class="services">
+        <div class="titles">
+            <h2><span>Movie</span> Trailers</h2>
+            <div class="imag">
+            <img src="img/Deadpool.jpg" class="imag">
+            <div class="play_button">
+              <img src="img/Play Button.png" class="play_button">
+            </div>
+          </div>
+          </div>
+          </div>
+          
+          
+          <!---Video Modal-->
+          <div class="video_modal">
+            <div class="closebtn">X</div>
+            <video id="myvideo" width="100%" height="auto" controls>
+              <source src="vid/Deadpool - Official HD Trailer 1 - 2016.mp4" type="video/mp4">
+              <source src="vid/Deadpool - Official HD Trailer #1 - 2016.mp4" type="video/ogg">
+            </video>
+          </div>
+          <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>   
+          <script type="text/javascript">
+            $(document).ready(function() {
+              var $playbtn = $(".play_button"),
+              $openvid = $(".video_modal"),
+              $closevid = $(".closebtn");
+              $video = $("#myvideo").get(0);
+
+              $playbtn.click(function() {
+                $openvid.fadeIn();
+                $video.load();
+              });
+              $closevid.click(function() {
+                $openvid.fadeOut();
+              });
+            });
+          </script>
+
+          <div class="imag">
+            <img src="img/Free Guy.jfif" class="imag">
+            <div class="play_button2">
+              <img src="img/Play Button.png" class="play_button2">
+            </div>
+          </div>
+          </div>
+          </div>
+          
+          
+          <!---Video Modal-->
+          <div class="video_modal2">
+            <div class="closebtn2">X</div>
+            <video id="myvideo" width="100%" height="auto" controls>
+              <source src="vid/Free Guy - Official Trailer - 20th Century Studios.mp4" type="video/mp4">
+              <source src="vid/Free Guy - Official Trailer - 20th Century Studios.mp4" type="video/ogg">
+            </video>
+          </div>
+          <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>   
+          <script type="text/javascript">
+            $(document).ready(function() {
+              var $playbtn = $(".play_button2"),
+              $openvid = $(".video_modal2"),
+              $closevid = $(".closebtn2");
+              $video = $("#myvideo").get(0);
+
+              $playbtn.click(function() {
+                $openvid.fadeIn();
+                $video.load();
+              });
+              $closevid.click(function() {
+                $openvid.fadeOut();
+              });
+            });
+          </script>
+ <!------footer start--------->
+	<footer>
+		<p>Ryan Reynolds</p>
+		<p>For more information about me and my upcoming movies - please click on the buttons below to follow my social media.</p>
+		<div class="social">
+      <a href="https://www.facebook.com/VancityReynolds" target="_blank"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://www.instagram.com/vancityreynolds/" target="_blank"><i class="fab fa-instagram"></i></a>
+			<a href="https://twitter.com/VancityReynolds?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fab fa-twitter"></i></a>
+		</div>
+		<p class="end">By NIIT HTML GROUP 4 &copy; 2022</p>
+	</footer>
+</body>    

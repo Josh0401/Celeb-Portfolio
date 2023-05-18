@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ryan Reynolds | Welcome</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+	<!----hero Section start---->
+
+	<div class="hero">
+		<nav>
+			<h2 class="logo">Rey<span>nolds</span></h2>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="biography.html">Biography</a></li>
+				<li><a href="movies.html">Movies</a></li>
+				<li><a href="awards.html">Awards</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			<a href="#" class="btn">Subscribe</a>
+		</nav>
+
+		<div class="content">
+			<h4>Hello, my name is</h4>
+			<h1>Ryan <span>Reynolds</span></h1>
+			<h3>I am an Actor.</h3>
+			<div class="newsletter">
+				<form>
+					<input type="email" name="email" id="mail" placeholder="Enter Your Email">
+					<input type="submit" name="submit" value="Lets Start">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!----About section start---->
+	<section class="about" id="about">
+		<div class="main">
+			<img src="img/Reynolds-removebg-preview.png">
+			<div class="about-text">
+				<h2><span>About</span> Me</h2>
+				<h5>Producer <span>& Actor</span></h5>
+				<p>Ryan Rodney Reynolds, born 23 October 1976, is a Canadian-American actor and producer. Throughout his 30-year career in film and television, he has received multiple accolades, including a Critics' Choice Movie Award, three People's Choice Awards, a Grammy and Golden Globe nomination, and a star on the Hollywood Walk of Fame. <span id = "dots">....</span><span id = "more"><br><br>Led by his several appearances as Deadpool in Marvel films,he is one of the highest-grossing film actors of all time, with a worldwide box-office gross of over $5 billion worldwide.
+
+					He began his career starring in the Canadian teen soap opera Hillside (1991–1993), and had minor roles before landing the lead role on the sitcom Two Guys and a Girl between 1998 and 2001. Reynolds then starred in a range of films, including comedies such as National Lampoon's Van Wilder (2002), Waiting... (2005), and The Proposal (2009). He also performed in dramatic roles in Buried (2010), Woman in Gold (2015), and Life (2017), starred in action films such as Blade: Trinity (2004), Green Lantern (2011), 6 Underground (2019) and Free Guy (2021), and provided voice acting in the animated features The Croods film series (2013–2020), Turbo (2013) and Pokémon: Detective Pikachu (2019).
+					
+					Reynolds's biggest commercial success came with the superhero films Deadpool (2016) and Deadpool 2 (2018), in which he played the title character. <br><br>The former set numerous records at the time of its release for an R-rated comedy and his performance earned him nominations at the Critics' Choice Movie Awards and the Golden Globe Awards.
+					
+					Reynolds was awarded a star on the Hollywood Walk of Fame in 2017. He has been married twice: to actress Scarlett Johansson from 2008 to 2011, and since 2012 to actress Blake Lively, with whom he has three daughters.</span></p>
+				<button onclick="myFunction()" id="myBtn">Read More</button>
+
+				<script>
+					function myFunction() {
+						var dots =
+						document.getElementById("dots");
+						var moreText =
+						document.getElementById("more");
+						var btnText =
+						document.getElementById("myBtn");
+		
+						if (dots.style.display === "none"){
+							dots.style.display = "inline";
+							btnText.innerHTML = "Read More";
+							moreText.style.display = "none";
+						}else{
+							dots.style.display = "none";
+							btnText.innerHTML = "Read Less";
+							moreText.style.display = "inline";
+						}
+					}
+				</script>
+			</div>
+		</div>
+	</section>
+
+	<!----- section start----------->
+	<section class="movies" id="movies">
+	<div class="service">
+		<div class="title">
+			<h2><span>Movies</span> Acted</h2>
+		  <div class="container">
+			<img src="img/Deadpool.jpg" alt="Avatar" class="image" style="width:100%">
+			<div class="overlay">
+			  <div class="text">Ajax, a twisted scientist, experiments on Wade Wilson, a mercenary, to cure him of cancer and give him healing powers. However, the experiment leaves Wade disfigured and he decides to exact revenge.<br><br><br>Release date: <br>12 February 2016.</div>
+			</div>
+		  </div>
+		  <div class="container">
+			<img src="img/Free Guy.jfif" alt="Avatar" class="image" style="width:100%">
+			<div class="overlay">
+			  <div class="text">When a bank teller discovers he's actually a background player in an open-world video game, he decides to become the hero of his own story -- one that he can rewrite himself. In a world where there's no limits, he's determined to save the day his way before it's too late, and maybe find a little romance with the coder who conceived him.<br><br><br>Release date: <br>13 August 2021.</div>
+			</div>
+		  </div>
+		  <div class="container">
+			<img src="img/Red Notice.jfif" alt="Avatar" class="image" style="width:100%">
+			<div class="overlay">
+			  <div class="text">In the world of international crime, an Interpol agent attempts to hunt down and capture the world's most wanted art thief.<br><br><br>Release date: <br>5 November 2021.</div>
+			</div>
+		  </div>
+		  <div class="container">
+			<img src="img/Adam Project.jfif" alt="Avatar" class="image" style="width:100%">
+			<div class="overlay">
+			  <div class="text">After accidentally crash-landing in 2022, time-traveling fighter pilot Adam Reed teams up with his 12-year-old self for a mission to save the future.<br><br><br>Release date: <br>11 March 2022.</div>
+			</div>
+		  </div>
+		  <div class="container">
+			<img src="img/6 Underground.jfif" alt="Avatar" class="image" style="width:100%">
+			<div class="overlay">
+			  <div class="text">Six individuals from all around the globe, each the very best at what they do, have been chosen not only for their skill, but for a unique desire to delete their pasts to change the future.<br><br><br>Release date: <br>13 December 2019.</div>
+			</div>
+		  </div>
+		  <div class="container">
+			<img src="img/HB.jfif" alt="Avatar" class="image" style="width:100%">
+			<div class="overlay">
+			  <div class="text">Michael Bryce, a protection agent, is tasked with protecting Darius Kincaid, one of the world's most famous assassins. The two must then set aside their differences to tackle several dangerous events.<br><br><br>Release date: <br>18 August 2017.</div>
+			</div>
+		  </div>
+
+	<!------Contact Me------>
+	<section class="contact" id="contact"></section>
+	<div class="contact-me">
+		<p>For Gigs and Productions</p>
+		<a class="button-two" href="#">Hire Me</a>
+	</div>
+
+	<div class="title">
+	<h2><span>Awards</span> Won</h2>
+	<div class="flip-card-container">
+		<div class="flip-card">
+		  <div class="flip-card-front">
+			<img src="img/Critics-removebg-preview.png">
+		  </div>
+		  <div class="flip-card-back">
+			<p>
+				<span>Critics' Choice Movie Awards</span>
+				<br>
+				Best Actor in a Comedy.
+			  <span>- Deadpool (2016) -</span>
+			</p>
+		  </div>
+		</div>
+	  </div>
+
+	  <div class="flip-card-container">
+		<div class="flip-card">
+		  <div class="flip-card-front">
+			<img src="img/Golden_Globe-removebg-preview.png">
+		  </div>
+		  <div class="flip-card-back">
+			<p>
+				<span>Golden Globe Awards</span>
+				<br>
+				Best Actor – Motion Picture Musical or Comedy
+			  <span>- Deadpool (2017) -</span>
+			</p>
+		  </div>
+		</div>
+	  </div>
+
+	  <div class="flip-card-container">
+		<div class="flip-card">
+		  <div class="flip-card-front">
+			<img src="img/Grammy_Award_-removebg-preview.png">
+		  </div>
+		  <div class="flip-card-back">
+			<p>
+				<span>Grammy Awards</span>
+				<br>
+				Best Compilation Soundtrack for Visual Media
+			  <span>- Deadpool 2 (soundtrack) (2019) -</span>
+			</p>
+		  </div>
+		</div>
+	  </div>
+	<!------footer start--------->
+	<footer>
+		<p>Ryan Reynolds</p>
+		<p>For more information about me and my upcoming movies - please click on the link below to subscribe to my channel:</p>
+		<div class="social">
+			<a href="#"><i class="fab fa-facebook-f"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-dribbble"></i></a>
+		</div>
+		<p class="end">By Joshua Iyoha &copy; 2019</p>
+	</footer>
+</body>
+</html>
